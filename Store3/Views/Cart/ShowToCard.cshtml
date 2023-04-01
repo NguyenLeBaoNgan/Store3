@@ -1,0 +1,42 @@
+﻿@model Store3.Models.Cart
+@{
+    ViewBag.Title = "ShowToCard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ShowToCard</h2>
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tên sách</th>
+                <th>Hình ảnh</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Tổng</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Items)
+            {
+                double total = Convert.ToDouble(item.sach.GiaBan.Value * item.SoLuong);
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => item.sach.TenSach)
+                    </td>
+                    <td>
+                        <img src="@Url.Action(item.sach.HinhAnh)" style="width:100px,height:100px;" />
+                    </td>
+                    <td>@Html.DisplayFor(model=>item.sach.GiaBan)</td>
+                    <td>@Html.DisplayFor(model=>item.SoLuong)</td>
+                    <td>
+                        Total: @total
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+}

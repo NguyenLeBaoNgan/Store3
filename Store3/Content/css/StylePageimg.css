@@ -1,0 +1,158 @@
+﻿
+
+.pagination_rounded, .pagination_square {
+    display: inline-block;
+    margin-left: 400px;
+    margin-top: 300px;
+}
+
+.pagination_rounded {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .pagination_rounded li:first-child {
+        margin-left: 0px;
+    }
+
+    .pagination_rounded li {
+        float: left;
+        margin-left: 20px;
+    }
+
+        .pagination_rounded li a:hover {
+            background: #4285f4;
+            color: #fff;
+            border: 1px solid #4285f4;
+        }
+
+a:link {
+    text-decoration: none;
+}
+
+.pagination_rounded .prev {
+    margin-left: 0px;
+    border-radius: 35px;
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+}
+
+
+.pagination_rounded li a {
+    float: left;
+    color: #4285f4;
+    border-radius: 50%;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    border: 1px solid #e0e0e0;
+}
+
+.pagination_rounded .prev i {
+    margin-right: 10px;
+}
+
+.pagination_rounded .next {
+    border-radius: 35px;
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.visible-xs {
+    display: none !important;
+}
+/*<style >*/
+.show-read-more .more-text {
+    display: none;
+}
+
+/*</style >*/
+
+
+/*<style >*/
+.product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-tumb {
+    padding: 30px;
+}
+
+.product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.product-tumb h6 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product-tumb h4 a:hover {
+    color: #fbb72c;
+}
+
+.product-tumb p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+    .product-bottom-details div {
+        float: left;
+        width: 50%;
+    }
+
+.product-price {
+    font-size: 18px;
+    color: #fbb72c;
+    font-weight: 600;
+}
+
+    .product-price small {
+        font-size: 80%;
+        font-weight: 400;
+        text-decoration: line-through;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+.product-links {
+    text-align: right;
+}
+
+    .product-links a {
+        display: inline-block;
+        margin-left: 5px;
+        color: #e1e1e1;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+        .product-links a:hover {
+            color: #fbb72c;
+        }
+
+/*</style >*/
